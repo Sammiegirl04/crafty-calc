@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Crafty Calculator</title>
+  <!--any other script, links, meta tags, ie bootstrap or angular-->
+</head>
+
+<body>
+  <header>
+    <h1>The Crafty Calculator</h1>
+  </header>
+
+  <!--any other forms, divs, labels, inputs, etc. I'm thinking of using columns
+  via bootstrap for 2 input fields and an on click action-->
+</body>
+</html>
