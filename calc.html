@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  
 
   <title>The Crafty Calculator</title>
-  <script type="text/javascript" src="calc.js"></script>
+
   <!--any other script, links, meta tags, ie bootstrap or angular-->
 </head>
 
@@ -19,10 +19,12 @@
     <input id="units" type="text" name="units"><br>
     Total amount of time spent:<br>
     <input id="time" type="text" name="time"><br>
-    <button id="button" onclick="myFunction()">Calculate</button>
+    <button id="button" onclick="calcSubmission">Calculate</button>
   </form>
 
   <!--any other forms, divs, labels, inputs, etc. I'm thinking of using columns
   via bootstrap for 2 input fields and an on click action-->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="calc.js"></script>
 </body>
 </html>
