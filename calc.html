@@ -4,6 +4,7 @@
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
   <title>The Crafty Calculator</title>
+  <script type="text/javascript" src="calc.js"></script>
   <!--any other script, links, meta tags, ie bootstrap or angular-->
 </head>
 
@@ -13,12 +14,12 @@
   </header>
   <form>
     Total cost of supplies:<br>
-    <input id="cost" type= "text" name="supplies"><br>
+    <input id="cost" type= "text" name="supplies" value="20"><br>
     Total number of units:<br>
     <input id="units" type="text" name="units"><br>
     Total amount of time spent:<br>
     <input id="time" type="text" name="time"><br>
-    <input type="button" value="Calculate">
+    <button id="button" onclick="myFunction()">Calculate</button>
   </form>
 
   <!--any other forms, divs, labels, inputs, etc. I'm thinking of using columns
