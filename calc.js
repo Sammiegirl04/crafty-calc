@@ -6,18 +6,21 @@ $(document).ready(function() {
     var x = document.getElementById("cost").value;
     var y = document.getElementById("units").value;
     var z = document.getElementById("time").value;
+    var lab = document.getElementById("labor").value;
     var iscostValid = validAmount.test(x);
-    var areUnitsValid = validAmount.test(y);
+    var areUnitsValid = validUnit.test(y);
     var isTimeValid = validTime.test(z);
+    var isLaborValid = validAmount.test(lab);
 
     console.log(iscostValid);
     console.log(areUnitsValid);
     console.log(isTimeValid);
 
-  //  if(iscostValid && areUnitsValid && isTimeValid){
-    	// move forward with math and return math
-  //  } else {
+    if(iscostValid && areUnitsValid && isTimeValid && isLaborValid){
+    	
+
+    } else {
     	// display errors to the user
-  //  )}
+    )}
   });
 });
