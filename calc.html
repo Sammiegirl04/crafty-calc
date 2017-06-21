@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
   <title>The Crafty Calculator</title>
   <script type="text/javascript" src="calc.js"></script>
@@ -9,22 +12,56 @@
 </head>
 
 <body>
-  <header>
-    <h1>The Crafty Calculator</h1>
-  </header>
-  <form>
-    Total cost of supplies:<br>
-    $<input id="cost" type= "text" name="supplies"><br><br>
-    Total number of units:<br>
-    <input id="units" type="text" name="units"><br><br>
-    Total amount of minutes spent:<br>
-    <input id="time" type="text" name="time"> minutes<br><br>
-    Enter your hourly wage:<br>
-    $<input id="labor" type="text">per hour
-    <br><br>
-    <button id="button">Calculate</button>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>The Crafty Calculator</h1>
+      <p>A handy tool to help you price your homemade crafts and services!</p>
+    </div>
+  </div>
 
-    <p id="unitcost"></p>
+  <br><br>
+  <div class="container-fluid">
+    <div class="col-sm-4">
+      <div class="input-group">
+        <span class="input-group-addon" data-toggle="tooltip" title="The total of all supplies purchased for making your product.">
+          Total cost of supplies: $</span>
+        <input id="cost" type="text" class="form-control"/>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="input-group">
+        <span class="input-group-addon" data-toggle="tooltip" title="How many items did you make with the amound of supplies purchased?">
+          Total number of units:</span>
+        <input id="units" type="text" class="form-control"/>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="input-group">
+        <span class="input-group-addon" data-toggle="tooltip" title="How long did it take you to make these items? (In minutes only)">
+          Total amount of minutes spent:</span>
+        <input id="time" type="text" class="form-control"/>
+      </div>
+    </div>
+    <br><br><br>
+    <div class="col-sm-6">
+      <div class="input-group">
+        <span class="input-group-addon" data-toggle="tooltip" title="How much will you pay yourself per hour? Between $10-$15 is standard.">
+          Enter your hourly wage: $</span>
+        <input id="labor" type="text" class="form=control">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="input-group">
+        <span class="input-group-addon" data-toggle="tooltip" title="Markup is where profit comes in. This is money used to invest in your
+        business, buy new tools, equipment, hiring help, etc. A markup of 1 will be your item cost. A markup of at least 2 times is suggested.
+        This will double your sale price. 2.2-2.4 is standard retail markup.">
+          Enter your markup:</span>
+        <input id="markup" type="text" class="form-control">
+      </div>
+    </div>
+    <br><br><br>
+    <button id="button" type="button" class="btn btn-primary">Calculate</button>
+    <br><br>
     <p id="price"></p>
   </form>
 
