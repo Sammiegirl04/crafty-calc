@@ -14,16 +14,18 @@
   </header>
   <form>
     Total cost of supplies:<br>
-    $<input id="cost" type= "text" name="supplies" value="00.00"><br><br>
+    $<input id="cost" type= "text" name="supplies"><br><br>
     Total number of units:<br>
     <input id="units" type="text" name="units"><br><br>
-    Total amount of time spent:<br>
-    <input id="time" type="text" name="time" value="00:00"><br>
-    Enter in HH:MM format<br><br>
+    Total amount of minutes spent:<br>
+    <input id="time" type="text" name="time"> minutes<br><br>
     Enter your hourly wage:<br>
-    $<input id="labor" type="text" value="10">per hour
+    $<input id="labor" type="text">per hour
     <br><br>
     <button id="button">Calculate</button>
+
+    <p id="unitcost"></p>
+    <p id="price"></p>
   </form>
 
   <!--any other forms, divs, labels, inputs, etc. I'm thinking of using columns
