@@ -1,6 +1,11 @@
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
-  $("button").click(function(){
+
+  $("#reset").click(function(){
+    document.getElementById("myForm").reset();
+  });
+
+  $("#button").click(function(){
     var validAmount = /(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|[0-9]+)?(\.[0-9]{1,2})?$/;
     var validUnit = /^[1-9]*$/;
     var validTime = /^[0-9]*$/;
@@ -22,11 +27,11 @@ $(document).ready(function() {
       var labCost = z /60 * lab;
       var markup = document.getElementById("markup").value;
       var price = costPerUnit + labCost * markup;
-
-      document.getElementById("price").innerHTML = 'Your suggested selling price per item is $' + price;
+      var results = price.toFixed(2);
+      document.getElementById("price").innerHTML = 'Your suggested selling price per item is: $' + results;
 
   //  } else {
-    	// display errors to the user
+
     };
   });
 });

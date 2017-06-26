@@ -1,0 +1,20 @@
+.jumbotron {
+  text-align:left;
+  color: #000000;
+  background-color: #7FFFD4;
+  background-image: url("owlcalc.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+span.glyphicon {
+  color: #20B2AA;
+}
+
+body {
+  background-color: #F0F8FF;
+}
+
+p.results {
+  font-size: 200%;
+}
