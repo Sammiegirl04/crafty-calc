@@ -23,6 +23,7 @@
 
   <br><br>
   <div class="container-fluid">
+
     <div class="col-sm-4">
       <div class="input-group">
         <span class="input-group-addon">
@@ -30,6 +31,7 @@
           Total cost of supplies: $</span>
         <input id="cost" type="text" class="form-control"/>
       </div>
+      <span id="costError" class="error"></span>
     </div>
     <div class="col-sm-4">
       <div class="input-group">
@@ -38,6 +40,7 @@
           Total number of units:</span>
         <input id="units" type="text" class="form-control"/>
       </div>
+      <span id="unitError" class="error"></span>
     </div>
     <div class="col-sm-4">
       <div class="input-group">
@@ -46,6 +49,7 @@
           Total amount of minutes spent:</span>
         <input id="time" type="text" class="form-control"/>
       </div>
+      <span id="timeError" class="error"></span>
     </div>
     <br><br><br>
     <div class="col-sm-6">
@@ -53,8 +57,9 @@
         <span class="input-group-addon">
           <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="How much will you pay yourself per hour? Between $10-$15 is standard."></span>
           Enter your hourly wage: $</span>
-        <input id="labor" type="text" class="form=control">
+        <input id="labor" type="text" class="form=control"/>
       </div>
+      <span id="labError" class="error"></span>
     </div>
     <div class="col-sm-6">
       <div class="input-group">
@@ -62,9 +67,10 @@
           <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="Markup is where profit comes in. This is money used to invest in your
           business, buy new tools, equipment, hiring help, etc. A markup of 1 will be your item cost. A markup of at least 2 times is suggested.
           This will double your sale price. 2.2-2.4 is standard retail markup."></span>
-          Enter your markup:</span>
-        <input id="markup" type="text" class="form-control">
+          Enter your markup: </span>
+        <input id="markup" type="text" class="form-control"/>
       </div>
+      <span id="markupError" class="error"></span>
     </div>
     <br><br><br>
     <button id="button" type="button" class="btn btn-primary">Calculate</button>

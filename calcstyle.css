@@ -18,3 +18,7 @@ body {
 p.results {
   font-size: 200%;
 }
+
+span.error {
+  color: red;
+}
