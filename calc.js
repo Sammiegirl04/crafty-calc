@@ -2,10 +2,12 @@ $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
 
   $("#reset").click(function(){
-    $("input").empty();
+    clearAll();
+    $("input").val('');
   });
 
   $("#button").click(function(){
+    clearAll();
     //var validAmount = /(?=.)^\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|[0-9]+)?(\.[0-9]{1,2})?$/;
     var validAmount = /^\$?([1-9]\d{0,2}(,\d{3})*(\.\d{2})?|[1-9]\d*(\.\d{2})?|0?\.(?!00)\d{2})$/
     var validUnit = /^[0-9]+$/;
@@ -50,3 +52,12 @@ $(document).ready(function() {
     };
   });
 });
+
+function clearAll() {
+  $('#costError').empty();
+  $('#unitError').empty();
+  $('#timeError').empty();
+  $('#labError').empty();
+  $('#markupError').empty();
+  $('#price').empty();
+}

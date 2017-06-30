@@ -23,3 +23,19 @@ span.error {
   color: red;
   font-style: oblique;
 }
+
+.button-primary-color {
+  background: #2AB5AD;
+  color: white;
+  border: 1px solid #008178;
+}
+
+.button-primary-color:hover , .button-primary-color:focus {
+  background: #4ec6bd;
+  color: white;
+  border: 1px solid #008178;
+}
+
+.row{
+  margin-bottom: 20px;
+}
