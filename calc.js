@@ -33,7 +33,7 @@ $(document).ready(function() {
 
     } else {
         if (x === 0 || ! isCostValid){
-          document.getElementById("costError").innerHTML = " Please enter a valid amount";
+          document.getElementById("costError").innerHTML = " Please enter a valid dollar amount";
       }
         if (! areUnitsValid || y == 0){
           document.getElementById("unitError").innerHTML = " Please enter at least 1 unit";
@@ -42,7 +42,7 @@ $(document).ready(function() {
           document.getElementById("timeError").innerHTML = " Please enter time in minutes only";
       }
         if (! isLaborValid || lab == 0){
-          document.getElementById("labError").innerHTML = " Please enter a valid amount";
+          document.getElementById("labError").innerHTML = " Please enter a valid dollar amount";
       }
         if (! isMarkupValid || markup == 0){
           document.getElementById("markupError").innerHTML = " Please enter a markup of at least 1";

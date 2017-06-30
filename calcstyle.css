@@ -21,4 +21,5 @@ p.results {
 
 span.error {
   color: red;
+  font-style: oblique;
 }
