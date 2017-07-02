@@ -1,5 +1,7 @@
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
+  document.getElementById("info").style.display = 'none';
+
 
   $("#reset").click(function(){
     clearAll();
@@ -32,8 +34,11 @@ $(document).ready(function() {
       var price = costPerUnit + labCost * markup;
       var results = price.toFixed(2);
       document.getElementById("price").innerHTML = 'Your suggested selling price per item is: $' + results;
+      document.getElementById("info").style.display = 'block';
 
     } else {
+        document.getElementById("info").style.display = 'none';
+
         if (x === 0 || ! isCostValid){
           document.getElementById("costError").innerHTML = " Please enter a valid dollar amount";
       }
@@ -60,4 +65,5 @@ function clearAll() {
   $('#labError').empty();
   $('#markupError').empty();
   $('#price').empty();
+  document.getElementById("info").style.display = 'none';
 }

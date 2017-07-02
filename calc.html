@@ -20,10 +20,18 @@
       <div class="col-xs-12">
         <div class="jumbotron">
           <h1>The Crafty Calculator</h1>
-          <p>A handy tool to help you price your homemade crafts and services!</p>
+          <h3>A handy tool to help you price your homemade crafts and services!</h3>
         </div>
       </div>
     </div>
+    <h4>Crafting from home is a great way to express your
+      creativity and even generate income. The creation of apps and websites like
+      Etsy and Facebook Marketplace have made it easier than ever for crafters to
+      list and market their products. However, how do you figure out how to price
+      your items? What goes into calculating a fair price? How much should you pay
+      yourself? With <u>The Crafty Calculator</u>, all of those questions will be answered.
+      Enter your information below and click Calculate to see your results!</h4>
+    <br>
     <div class="row">
       <div class="col-xs-12">
         <div class="input-group">
@@ -35,18 +43,18 @@
         <span id="costError" class="error"></span>
       </div>
     </div>
-    <div class="row">  
+    <div class="row">
       <div class="col-xs-12">
         <div class="input-group">
           <span class="input-group-addon">
-            <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="How many items did you make with the amound of supplies purchased?"></span>
+            <span class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="How many items did you make with the amount of supplies purchased?"></span>
             Total number of units:</span>
           <input id="units" type="text" class="form-control"/>
         </div>
         <span id="unitError" class="error"></span>
       </div>
     </div>
-    <div class="row">  
+    <div class="row">
       <div class="col-xs-12">
         <div class="input-group">
           <span class="input-group-addon">
@@ -57,7 +65,7 @@
         <span id="timeError" class="error"></span>
       </div>
     </div>
-    <div class="row">  
+    <div class="row">
       <div class="col-xs-12">
         <div class="input-group">
           <span class="input-group-addon">
@@ -68,7 +76,7 @@
         <span id="labError" class="error"></span>
       </div>
     </div>
-    <div class="row">  
+    <div class="row">
       <div class="col-xs-12">
         <div class="input-group">
           <span class="input-group-addon">
@@ -83,13 +91,54 @@
     </div>
       <button id="button" type="button" class="btn btn-primary button-primary-color">Calculate</button>
       <button id="reset" type="button" class="btn btn-primary button-primary-color">Reset</button>
-      <br><br>
+      <br><br><br>
       <p id="price" class="results"></p>
+      <br>
+      <div id="info" class="info">
+        <h3><u>Does this price seem too high?</u></h3>
+          Keep in mind that this calculator only serves as an estimate for pricing your crafts.
+          If the price seems too high, consider a few things:<br><br>
+          <ul>
+            <li>What are the biggest factors contributing to the cost? (Usually it's cost of
+              materials or amount of time.)</li>
+            <li>Can you find more affordable raw materials elsewhere to lower production costs?</li>
+            <li>Can you create a more efficient manufacturing technique to reduce production time?</li>
+            <li>Increase the perceived value of your products. Consider rebranding, perhaps updating
+              your website, logo, and packaging in order to attract a clientele who understands that
+              the pricing of your products accurately reflects the quality.</li>
+            <li>Have a few less expensive items available in addition to the higher-priced items.
+              These do well as quick-sell items and provide products for all types of customers.</li>
+          </ul>
+          <br><br>
+          <h3><u>Does this price seem too low?</u></h3>
+            If you are selling products, but just don't seem to be making a profit, or even breaking
+            even, perhaps your items are priced too low.<br><br>
+
+            Pricing your items on the lower end may draw in more customers, however, you are not
+            valuing yourself as a crafter and are not implementing good business practices. Consider these
+            points:<br><br>
+            <ul>
+              <li>Crafting can be very costly. You want to be sure that you are
+                charging enough to cover your cost of materials, as well as packaging, tools, electricity, gas
+                and any other hidden costs that go into producing this product.</li>
+              <li>Don't sell yourself short! Crafting can be extremely time-consuming, and is often a labor
+                of love. If you don't set your prices to accurately reflect that you value your work, then
+                no one else will value your work either! Pay yourself a healthy, fair hourly wage.</li>
+              <li>Can you possibly invest in better quality raw materials, or packaging? Not only will your
+                finished product look and feel nicer, you can accurately reflect these improvements in your
+                pricing.</li>
+            </ul>
+            <br>
+          <h3><u>Finally, remember the law of exchange!</u></h3>
+            Creating something with your hands, your time, and your resources requires an investment
+            of your energy. When you provide a product or service for someone, you are loving them, helping them
+            and assisting them. Energy has a flow, or currency. Currency is also the term for money. When you
+            expend your energy making a product you are generating currency. It is only natural for your consumers
+            to then give you another type of currency as payment: their money. It is a simple act of transference and
+            exchange.<br>
+            So remember, value and take pride in your work, and the benefits will flow to you!
+        </div>
       </div>
     </form>
-
-  <!--TODO add css styling for tooltip background, price, fonts and button.
-  Add a clear button.Format price results to 2 decimal places.
--->
-</body>
+  </body>
 </html>

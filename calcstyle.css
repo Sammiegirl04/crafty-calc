@@ -5,6 +5,8 @@
   background-image: url("owlcalc.png");
   background-position: right;
   background-repeat: no-repeat;
+  text-shadow: 3px 3px 5px #27a59f;
+  box-shadow: 8px 8px 5px #27a59f;
 }
 
 span.glyphicon {
@@ -16,7 +18,9 @@ body {
 }
 
 p.results {
-  font-size: 200%;
+  font-size: 250%;
+  text-align: center;
+  font-weight: bold;
 }
 
 span.error {
@@ -38,4 +42,18 @@ span.error {
 
 .row{
   margin-bottom: 20px;
+}
+
+h4 {
+  color: #22918b;
+}
+
+.glyphicon + .tooltip > .tooltip-inner {
+  background-color: #27a59f;
+  color: white;
+  border: 1px solid #008178;
+}
+
+h3 {
+  color: #22918b;
 }
