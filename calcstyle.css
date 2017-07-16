@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   text-shadow: 3px 3px 5px #27a59f;
   box-shadow: 8px 8px 5px #27a59f;
+  margin: 15px 5px
 }
 
 span.glyphicon {
@@ -15,12 +16,15 @@ span.glyphicon {
 
 body {
   background-color: #F0F8FF;
+  margin: 10px 5px 15px;
+  padding-bottom: 10px;
 }
 
 p.results {
   font-size: 250%;
   text-align: center;
   font-weight: bold;
+  color: #22918b;
 }
 
 span.error {
